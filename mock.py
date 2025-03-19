@@ -1,4 +1,4 @@
-
+# A file showing the basics of how the ranking system will work
 
 data = int(input("Enter your time: "))
 rank = ""
