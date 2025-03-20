@@ -7,6 +7,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/leaderboard')
+def leaderboard():
+    return render_template('leaderboard.html')
+
 # Submit the form
 @app.route('/submit', methods=['POST'])
 def submit():
@@ -47,8 +51,6 @@ def submit():
     # Save updated data back to JSON
     with open("data.json", "w") as f:
         json.dump(data, f, indent=4)
-    
-    
     
     # Redirect to the ranks page with the name and time attched
     return render_template('ranks.html', name=name, time=time, rank=rank)
