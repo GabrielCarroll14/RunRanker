@@ -1,4 +1,3 @@
 To-do list:
 
-Build a form that sends data back to the backend
 Send the data through to the ranking system (basics of the system show in the mock.py file, what i will probally do is just create the ranking system in that file then just move it between the 'app.py' and 'mock.py' files)
